@@ -1,0 +1,72 @@
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+}
+
+div.board * {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  padding: 0;
+}
+
+.board {
+  width: 428px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: white;
+  border: 20px solid black;
+}
+
+.holder:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  display: inline-block;
+}
+
+.first_column_squares>div:nth-child(even) {
+  background-color: black;
+}
+.second_column_squares>div:nth-child(odd) {
+  background-color: black;
+}
+.third_column_squares>div:nth-child(even) {
+  background-color: black;
+}
+.fourth_column_squares>div:nth-child(odd) {
+  background-color: black;
+}
+.fifth_column_squares>div:nth-child(even) {
+  background-color: black;
+}
+.sixth_column_squares>div:nth-child(odd) {
+  background-color: black;
+}
+.seventh_column_squares>div:nth-child(even) {
+  background-color: black;
+}
+.eighth_column_squares>div:nth-child(odd) {
+  background-color: black;
+}
+
+div.chess_black {
+  position: absolute;
+  margin: 8px 8px;
+  border-radius: 50%;
+  background-color: #7a001b;
+  width: 35px;
+  height: 35px;
+}
+div.chess_white {
+  position: absolute;
+  margin: 8px 8px;
+  border-radius: 50%;
+  background-color: #ffb7ba;
+  width: 35px;
+  height: 35px;
+}
